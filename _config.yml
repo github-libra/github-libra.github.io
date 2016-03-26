@@ -1,0 +1,58 @@
+
+# SEO settings
+title: Libra
+description: "my notebook"
+keywords: "Jekyll, js, SEO, blog, web, frontend"
+url: http://github-libra.github.io/
+# baseurl: "/simplest"
+# baseurl: null
+
+google_analytics: UA-75628669-1
+repo: http://github-libra.github.io/
+disqus_shortname: "libra"
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
+
+source: source
+destination: _site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : libra
+  job      : Frontend Engineer
+  bio      : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb    : /images/author.jpg
+  email    : thj.web@icloud.com
+  url      : http://github-libra.github.io
+  github   : http://github.com/github-libra
+  linkedin : https://www.linkedin.com/in/%E9%B9%A4%E4%BF%8A-%E5%94%90-262a07a4?trk=hp-identity-name
+
+# social settings
+# og_locale: "pt_BR"
+# twitter_card: "summary_large_image"
+# twitter_site: "@nandomoreirame"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
