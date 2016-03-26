@@ -1,31 +1,24 @@
 
 # Basic
-name:               "Kiko"
-description:        "a clean, lightweight and minimalistic blog theme for jekyll"
+name:               "H"
+description:        "post about js/html/css/framework/"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
-url:                "//kiko.gfjaru.com"
-author:             "gfjaru"
-twitter:
-  username:         "gfjaru"
-#facebook:
-#  app_id:           1234
-#    publisher:      1234
-
+url:                "//github-libra.github.com"
+author:             "THJ"
+timezone:           CN
 # URL
 baseurl:            ""
-#baseurl:            "" #For Root Domain
-permalink:          /:year/:month/:day/:title/
-
+permalink:          pretty
+google_analytics:   "UA-75628669-1"
 # Markdown
 markdown:           kramdown
 
 # Navigation
 nav:
   - name:           "About"
-    href:           "//kiko.gfjaru.com/about"
-  - name:           "Download"
-    href:           "//github.com/gfjaru/Kiko/releases"
+    href:           "/about"
+  
 
 # Sass
 sass:
