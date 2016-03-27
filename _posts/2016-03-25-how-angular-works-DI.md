@@ -10,7 +10,7 @@ category: angular
 
 ## why do we need that?
 
-As documented @[AngularJS developer guide]()
+As documented @[AngularJS developer guide](https://docs.angularjs.org/guide/di)
 
 There are only three ways a component (object or function) can get a hold of its dependencies:
 
