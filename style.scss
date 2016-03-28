@@ -292,14 +292,14 @@ tbody tr:nth-child(odd) th {
     margin-bottom: .75rem;
     font-size: .75rem;
     font-weight: 600;
-    text-transform: uppercase;
+    text-decoration: underline;
 
     a {
       color: #333;
 
       &:hover,
       &:focus {
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }
