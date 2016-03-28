@@ -24,7 +24,7 @@ angular.module('app')
 Well, down to the earth, they're `$provider`
 
 
-## what's $provider?
+## What's $provider?
 
 >The $provide service has a number of methods for registering components with the $injector. Many of these functions are also exposed on angular.Module.
 
@@ -43,7 +43,7 @@ The second argument of `provider()` can be an Object or a function. If it's an O
 
 
 
-## how to use $provider?
+## How to use $provider?
 
 Normally syntax sugars are enough, but if we want to create a reusable components that can be configured before running, `provider` can do this.
 
@@ -77,7 +77,7 @@ angular.module('app')
 
 ```
 
-## how about the sugar syntax?
+## How about the sugar syntax?
 
 `constant` and `value` are useful to define application wide constants. The only difference is `constant` is available both config and run phase, while `value` can only be used in run phase. So we can use `constant` to define some configuration constant used in provider during config phase.
 
@@ -100,7 +100,7 @@ angular.module('app')
 
 ```
 
-## special purpose objects
+## Special purpose objects
 
 >we also have special purpose objects that are different from services. These objects extend the framework as plugins and therefore must implement interfaces specified by Angular. These interfaces are Controller, Directive, Filter and Animation.
 
@@ -114,7 +114,7 @@ myApp.controller('DemoController', ['clientId', function DemoController(clientId
 }]);
 ```
 
-## wrap it up
+## Wrap it up
 
 From Angular [docs](https://docs.angularjs.org/guide/providers)
 

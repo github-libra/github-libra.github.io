@@ -8,7 +8,7 @@ category: angular
     Angular offers Dependency Injection(DI) which simplifies the way we manage components and tests.
 </p>
 
-## why do we need that?
+## Why do we need that?
 
 As documented @[AngularJS developer guide](https://docs.angularjs.org/guide/di)
 
@@ -20,14 +20,14 @@ There are only three ways a component (object or function) can get a hold of its
 
 Clearly, we *hardcode* the dependency either by `new` operator or maintain a dependency map. Using the 3rd method, we can easily get what we want without the need to create one.
 
-## what is injector?
+## What is injector?
 
 Under the hood, Angular **Injector** does all the work locating the `services`, instantiate `controllers`. It manages the dependencies so that other services just ask what they want.
 From the document:
 
 >  `$injector` is used to retrieve object instances as defined by $provide, instantiate types, invoke methods, and load modules.
 
-## how does injector work?
+## How does injector work?
 
 `Injector` has 5 methods attached to it. They are
 
