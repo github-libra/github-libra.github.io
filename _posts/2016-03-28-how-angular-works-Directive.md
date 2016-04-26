@@ -45,6 +45,7 @@ angular.module('app')
 }])
 
 ```
+
 ### scope
 
 The scope property can be true, an object or a falsy value:
