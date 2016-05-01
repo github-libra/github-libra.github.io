@@ -4,6 +4,8 @@ category: JavaScript
 tags: JavaScript, pattern
 ---
 
+> notes from on-line course [Javascript Design Patterns](https://app.pluralsight.com/library/courses/javascript-design-patterns/table-of-contents) by [Aaron Powell](http://www.aaron-powell.com/)
+
 ## Function arguments
 
 Java has function overloading to provide same functionality with different arguments. JavaScript can do this by `arguments` inside every function.
