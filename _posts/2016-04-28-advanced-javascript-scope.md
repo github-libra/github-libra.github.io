@@ -7,7 +7,7 @@ tags: JavaScript
 > notes from on-line course: [Advanced JavasSript](https://app.pluralsight.com/library/courses/advanced-javascript/table-of-contents) by [*Kyle Simpson*](http://blog.getify.com/)
 
 
-# Where to look for things
+# Scope: where to look for things
 
 JavaScript has **function scope** only.
 
@@ -164,7 +164,7 @@ Q: What's the difference between *undeclared* and *undefined*?
 A: undefined is variable that is declared but not assigned value.
 
 
-## hoisting
+## Hoisting
 
 ```javascript
 a; //undefined
@@ -220,7 +220,7 @@ d = function() {
 }
 ```
 
-## this keyword
+## `this` keyword
 
 Every function, while executing, has a reference to its current executing context called `this`. For Lexical scope vs dynamic scope, JavaScript's dynamic scope is `this`.
 
@@ -250,11 +250,28 @@ o1.foo();       // "bar1"
 o2.foo();       // "bar2"
 foo();          // "bar3"
 ```
-`foo()` returns 'bar3' because the call site is `global.foo()`, `this` points to global, so `this.bar` means `global.bar` which is `bar3`.
+
+`foo()` returns 'bar3' because the call site is `global.foo()`, `this` points to global, so `this.bar` means `global.bar` which is `bar3`. The result is kinda like `foo` *borrows* o1's `foo` function in global context.
+
+One thing to note is that there's a difference between `bind` and `call`/`apply`. `call`/`apply` is one time binding, `bind` is hard binding. While using `bind` gives us predictable result, it's losing flexibility. 
 
 
+## `new` keyword
 
+The `new` keyword also has nothing to do with instantiate a class. When putting `new` in front of any function, it turns function call into `constructor` call. It essentially does 4 things:
 
+1. A brand new object will be created out of thin air.
+2. The object gets linked to a different object(eg,Foo.prototype).
+3. The object get bound to `this` keyword for the purpose of the function call.
+4. Implicitly return `this` if `constructor` doesn't have a return.
+
+## Lexical Scope and `this` context
+
+To put it metaphorically, they are like two buildings. In lexical scope building, you start looking for some variable in current floor, if not found, go one floor upwards till the top of the building.
+
+Unlike buildings in reality, it won't allow any crossovers between this two buildings.
+
+![scope and this metaphor](/images/scope-metaphor.png)
 
 
 
