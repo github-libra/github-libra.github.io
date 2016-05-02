@@ -89,7 +89,7 @@ JavaScript has prototype inheritance, which is different from classical OO inher
 ![classical inheritance](/images/classical-inheritance.png)
 ![prototype inheritance](/images/prototype-inheritance.png)
 
-In real world, we may design complex inheritence diagrams and just create one instance of them, in this case **modules** may be a better solutions.
+In real world, we may design complex inheritence diagrams and just create one instance of them, in this case **modules** may be a better solution.
 
 
 
