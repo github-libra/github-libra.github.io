@@ -44,7 +44,7 @@ It resolves to the stacking order like this:
 ## Stacking with `z-index`
 
 
-`z-index` value is an integer(negative or positive), it only has effects when element is *positioned*.
+`z-index` value is an integer(negative or positive), it only has effects when an element is *positioned*.
 
 Consider the layers below:
 
@@ -68,7 +68,7 @@ note that:
 
 ## Stacking Context
 
-> Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.
+> Stacking context is the three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user who is assumed to be facing the viewport or the web page. HTML elements occupy this space in priority order based on element attributes.
 
 A stacking context is formed, anywhere in the document, by any element which is either
 
@@ -128,10 +128,9 @@ DIV #2 and DIV #3 both create a stacking context and #2's `z-index` is larger th
 
 ![stacking-order-ex3](/images/stacking-order-ex3.png)
 
-Level1 doesn't create stacking context, level2 need to be on top of level1 so it need `z-index` 1 to create new stacking context. If every item in level2 creates a new stacking context, then level3 will overlap with levels items because level3 items are children of one level2 item, which is under other level2 items because appearance order.
+Level1 doesn't create stacking context, level2 need to be on top of level1 so it need `z-index` 1 to create a new stacking context. If every item in level2 creates a new stacking context, then level3 will overlap with levels items because level3 items are children of one level2 item, which is under other level2 items because appearance order.
 
 To fix this, no need to create stacking order for all items in each level, create stacking contexts for each level container. For example level2 container has `z-index` value 1, level3 container has `z-index` value 1(in fact, both container has `z-index` value will do). This is because level2 items belong to level2 container stacking context, level3 items belong to level3 container stacking context which is child stacking context of level2's, so it's on top of level3.
-
 
 
 
